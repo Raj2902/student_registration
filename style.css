@@ -1,0 +1,200 @@
+*{
+    font-family: math;
+}
+body{
+    background-color: #f0f0f0;
+}
+fieldset:nth-child(1){
+    background-color: #f8fafd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+img{
+    display: none;
+    width: 300px;
+}
+h1{
+    color: #00c2ff;
+    font-size: larger;
+    text-align: center;
+}
+hr{
+    background: #a9a9a9;
+    height: 1px;
+}
+h2{
+    font-size: large;
+    color: purple;
+}
+label span{
+    display: block;
+    font-weight: 600;
+    padding: 2px 0px;
+}
+fieldset:nth-child(1) input{
+    width: 95%;
+    border-radius: 7px;
+    padding: 10px 0px 10px 10px;
+}
+input[type="submit"]{
+    background: rgb(1, 255, 1);
+    padding: 5px 10px;
+    color: black;
+}
+input[type="submit"]:hover{
+    background: rgb(0, 128, 0);
+    padding: 5px 10px;
+    color: white;
+}
+fieldset:nth-child(2){
+    text-align: center;
+    border-top: none;
+}
+table{
+    border-collapse: collapse;
+    font-size: smaller;
+    text-align: center;
+    width: 290px;
+    overflow-x: auto;
+}
+td,th{
+    border : 1px solid black;
+    padding: 5px;
+}
+.added_students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tableCont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+.fa{
+    font-size: x-large !important;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+    }
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+h3{
+    margin-bottom: 0px;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-left: none;
+}
+.fa-trash-o{
+    font-size: 10px;
+}
+#del{
+    background-color: #545454;
+    color: white;
+}
+#del:hover{
+    background-color: black;
+}
+#edit{
+    background: #ff2626;
+    color:white;
+}
+#edit:hover{
+    background: red;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media (min-width:425px) {
+    table{
+        width: -webkit-fill-available;
+    }
+}
+@media (min-width: 520px) {
+    h1{
+        font-size: xx-large;
+    }
+}
+/*media query for devices with and more than 768px*/
+@media (min-width: 768px) {
+     .form-right-side{
+        width: -webkit-fill-available;
+     }
+     img{display: block;}
+    fieldset:nth-child(1){
+        background-color: transparent;
+        border: none;
+    }
+    fieldset:nth-child(2){
+        border: none;
+        border-top: 2px solid black;
+    }
+    h2{
+        text-align: center;
+        font-size: x-large;
+    }
+    h3{
+        font-size: xx-large;
+    }
+    .formData{
+        border: 2px solid #a9a9a9;
+        display: flex;
+    }
+    .tableCont{
+        display: block;
+    }
+    td,th{
+        border: 2px solid #a9a9a9;
+    }
+}
+/*media query for devices width with and more than 1024px*/
+@media (min-width: 1024px) {
+    h1{
+        font-size: xxx-large;
+    }
+    h2{
+        font-size: xx-large;
+    }
+    img{
+        width: 400px;
+    }
+    fieldset:nth-child(1){
+        font-size: larger;
+    }
+    .tableCont{
+        font-size: x-large;
+    }
+    .btn{
+        font-size: larger;
+    }
+    .scroll{
+        font-size: larger;
+    }
+    .fa{
+        font-size: xx-large !important;
+    }
+}

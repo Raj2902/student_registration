@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A comprehensive student registration system for Internshala, where a user can add more records, view  and delete the exisiting records."
+    />
+    <meta
+      name="keywords"
+      content="student registration, enrollment, school, college, university, online registration"
+    />
+    <meta name="author" content="Raj Agarwal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <!--external stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--using for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1>Student Registration System</h1>
+    <hr />
+    <section class="main-content">
+      <!--Form for entering students data-->
+      <div class="formData">
+        <img src="./images/stud_img.jfif" alt="stud_img" />
+        <div class="form-right-side">
+          <h2>Student Information</h2>
+          <div class="flex-form">
+            <form action="#" id="std_form" onsubmit="submitForm(event)">
+              <fieldset>
+                <label for="std_id"
+                  ><span>Student ID :</span>
+                  <input
+                    type="number"
+                    id="std_id"
+                    name="std_id"
+                    placeholder="Enter student's id."
+                    required
+                  />
+                </label>
+                <label for="name"
+                  ><span>Name :</span>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter student's name."
+                    required
+                  />
+                </label>
+                <label for="email"
+                  ><span>Email :</span>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter student's email."
+                    required
+                  />
+                </label>
+                <label for="contact"
+                  ><span>Contact Number :</span>
+                  <input
+                    type="number"
+                    inputmode="numeric"
+                    id="contact"
+                    name="contact"
+                    placeholder="Enter student's contact number."
+                    required
+                    minlength="10"
+                    maxlength="10"
+                  />
+                </label>
+              </fieldset>
+              <fieldset>
+                <input type="submit" value="Create" id="submit" class="btn" />
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--showing existing rercords of the students registered-->
+      <section class="added_students">
+        <h3>Exisiting Records</h3>
+        <div class="scroll">
+          <i class="fa fa-toggle-right" style="font-size: 48px; color: red"></i>
+          <span>Scroll Right</span>
+        </div>
+        <div class="tableCont">
+          <table>
+            <tr>
+              <th>Std ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Action</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </section>
+    <!--external script used-->
+    <script src="./dom.js"></script>
+  </body>
+</html>
