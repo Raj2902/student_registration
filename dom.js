@@ -154,5 +154,5 @@ function edit_record(event) {
   AND FILL ALL THE DETIAL IN THE FORM FROM THE SCRATCH.*/
   const sub_btn = document.querySelector("#submit");
   sub_btn.value = "Update";
-  sub_btn.style = "background:black";
+  sub_btn.style = "background:black;color:white";
 }
